@@ -24,16 +24,12 @@ function readLine() {
 
 function main() {
     const PI = Math.PI;
-    const r = +(readLine());
+    let r = parseFloat(readLine());
  
-    console.log(PI * r * r);
-    console.log(2 * PI * r);
-    try {    
-        // Attempt to redefine the value of constant variable PI
-        PI = 0;
-        // Attempt to print the value of PI
-        console.log(PI);
-    } catch(error) {
-        console.error("You correctly declared 'PI' as a constant.");
-    }
+    //print the area of the circle.
+    let area = PI * Math.pow(r, 2);
+    console.log(area);
+    //print the perimeter of the circle.
+    let perimeter = 2 * PI * r;
+    console.log(perimeter);
 }
