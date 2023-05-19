@@ -23,3 +23,24 @@ function readLine() {
     return inputString[currentLine++];
 }
 
+function vowelsAndConsonants(s) {
+    let c;
+
+    for (c of s)
+    {
+        if (['a', 'e', 'i', 'o', 'u'].includes(c))
+            console.log(c);
+    }
+    for (c of s)
+    {
+        if (!['a', 'e', 'i', 'o', 'u'].includes(c))
+            console.log(c);
+    }
+}
+
+
+function main() {
+    const s = readLine();
+    
+    vowelsAndConsonants(s);
+}
